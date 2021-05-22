@@ -27,7 +27,7 @@ twitter_username: thom2503
 github_username:  Thom2503
 
 # Build settings
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
