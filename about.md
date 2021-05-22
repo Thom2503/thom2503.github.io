@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "First post"
-permalink: https://octocat.github.io/about
+title: "About"
+permalink: https://thom2503.github.io/about
 ---
 
 # This is Thoms blog
 
-I will post random stuff.
+I will post random thoughts.
 
 mvg,
 
