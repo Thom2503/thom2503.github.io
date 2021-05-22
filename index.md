@@ -1,7 +1,0 @@
----
-layout: home
----
-
-# Welcome
-
-Test
