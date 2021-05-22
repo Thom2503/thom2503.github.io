@@ -1,8 +1,6 @@
 title: Thom2503 Blog
 description: >- # this means to ignore newlines until "baseurl:"
   Just a random blog with some of my thoughts.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://thom2503.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thom2503
 github_username:  Thom2503
 
