@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "First post"
-permalink: https://octocat.github.io/about/
+permalink: https://octocat.github.io/about
 ---
 
 # This is Thoms blog
