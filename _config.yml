@@ -8,4 +8,4 @@ github_username:  Thom2503
 
 # Build settings
 markdown: kramdown
-remote_theme: riggraz/no-style-please
+theme: hacker
