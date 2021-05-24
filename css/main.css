@@ -1,6 +1,39 @@
 body {
     margin: 60px auto;
     width: 70%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    background-color: rgb(242, 233, 226);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #dc322f;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: purple;
+}
+
+::selection {
+  color: white;
+  background: purple;
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: auto;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(242, 233, 226);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 20px;
+  border: 3px solid rgb(242, 233, 226);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -33,8 +66,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
