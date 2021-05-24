@@ -43,31 +43,32 @@ ul.posts li {
     list-style: none;
 }
 */
-/*// -------------- THEME SWITCHER -------------- //*/
-@mixin dark-appearance {
+body[a="dark"] {
   filter: invert(1);
-  img {
+}
+body[a="dark"] img {
+  filter: invert(1);
+}
+body[a="dark"] img.ioda {
+  filter: invert(0);
+}
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] {
     filter: invert(1);
-
-    &.ioda { filter: invert(0); }
+  }
+  body[a="auto"] img {
+    filter: invert(1);
+  }
+  body[a="auto"] img.ioda {
+    filter: invert(0);
   }
 }
-
-body[a="dark"] { @include dark-appearance; }
-
-
-@media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+html, body {
+  background: white;
 }
-/*// -------------------------------------------- //
-
-// bg color is also needed in html in order to
-// block body's background propagation
-// see: https://stackoverflow.com/a/61265706 */
-html, body { background: white; }
-
-html { height: 100%; }
-
+html {
+  height: 100%;
+}
 body {
   color: black;
   font-family: monospace;
@@ -76,62 +77,66 @@ body {
   margin: 0;
   min-height: 100%;
 }
-
-.post-meta { text-align: right; }
-
-h2, h3, h4, h5, h6 { margin-top: 3rem; }
-
-hr { margin: 2rem 0; }
-
-p { margin: 1rem 0; }
-
-li { margin: 0.4rem 0; }
-
-*:target { background: yellow; }
-
+.post-meta {
+  text-align: right;
+}
+h2, h3, h4, h5, h6 {
+  margin-top: 3rem;
+}
+hr {
+  margin: 2rem 0;
+}
+p {
+  margin: 1rem 0;
+}
+li {
+  margin: 0.4rem 0;
+}
+*:target {
+  background: yellow;
+}
 .w {
   width: fit-content;
   max-width: 640px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
-
 hr {
   text-align: center;
   border: 0;
-
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
 }
-
-table { width: 100%; }
-
+hr:before {
+  content: '/////';
+}
+hr:after {
+  content: attr(data-content) '/////';
+}
+table {
+  width: 100%;
+}
 table, th, td {
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
 }
-
 code {
   color: white;
   background: black;
 }
-
 div.highlighter-rouge code {
   display: block;
   overflow-x: auto;
   white-space: pre-wrap;
   padding: 1rem;
 }
-
 blockquote {
   font-style: italic;
   border: thin solid black;
   padding: 1rem;
-
-  p { margin: 0; }
 }
-
+blockquote p {
+  margin: 0;
+}
 img {
   max-width: 100%;
   display: block;
